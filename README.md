@@ -24,4 +24,7 @@ funny to use dex2jar against itself! After running the crypto code through dex2j
 it into a java project and access the function directly. The rest of the code simply wraps this
 function and properly reads the bytes needed for unpacked and decrypting.
 
+## Anything else? ##
+A commented IDA Pro IDB file is in the examples directory. Dumped into this directory upon request :)
+
 Tim Strazzere - diff@lookout.com - @timstrazz

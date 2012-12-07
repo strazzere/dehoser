@@ -87,12 +87,24 @@ public class unpacker {
     }
 
     /**
+     * The deobfuscator actually reversed to our own code
+     * 
+     * @param buffer
+     *            byte[] to decrypt
+     * @return decrypted byte[]
+     */
+    private static byte[] decryptSection(byte[] buffer) {
+        return deobfuscator.syrup(buffer);
+    }
+
+    /**
      * Leverage the crypto functions against itself ^_^
      * 
      * @param buffer
-     * @return
+     *            byte[] to decrypt
+     * @return decrypted byte[]
      */
-    private static byte[] decryptSection(byte[] buffer) {
+    private static byte[] decryptSectionViaExternal(byte[] buffer) {
         return com.code.code.df.DF.syrup(buffer);
     }
 

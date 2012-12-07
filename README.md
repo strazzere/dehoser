@@ -24,6 +24,14 @@ funny to use dex2jar against itself! After running the crypto code through dex2j
 it into a java project and access the function directly. The rest of the code simply wraps this
 function and properly reads the bytes needed for unpacked and decrypting.
 
+Since I ended up being somewhat interesting in what was actualling going on in the (de)obfuscation layer,
+I tore it apart and recoded it into the unpacker. This removes the external jar (created via dex2jar) as
+a dependancy, though I left the function and the jar included into the project. I attempted to leave the
+code as close to what it was compiled down to, including the silly function names. This might prove useful
+for anyone who wants to reverse a newer version, or just follow along. I've also included the "dead" code,
+which might be used to mangle some tools, or it could just be left of, or maybe it's just an attempt to
+confused reversers. Either way, all the code is in there and commmented.
+
 ## Anything else? ##
 A commented IDA Pro IDB file is in the examples directory. Dumped into this directory upon request :)
 

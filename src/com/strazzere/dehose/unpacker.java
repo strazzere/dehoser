@@ -30,7 +30,7 @@ public class unpacker {
             System.out.println(" [+] Read [ " + file.length + " ] bytes from [ " + args[0] + " ]");
 
             byte[] packed_section = getPackedSection(file);
-            System.out.println(" [+] Packed section appears to have a size of [ " + file.length + " ] bytes");
+            System.out.println(" [+] Packed section appears to have a size of [ " + packed_section.length + " ] bytes");
 
             byte[] buff = decryptSection(packed_section);
             System.out.println(" [+] Decrypted [ " + buff.length + " ] bytes");
